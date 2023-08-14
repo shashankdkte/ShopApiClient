@@ -13,7 +13,7 @@ const MenuItemList = () => {
       })
   },[])
   return (
-    <div>
+    <div className='row'>
       {menuItems.length > 0 && menuItems.map((menuItem, index) => (
         
         <MenuItemCard  menuItem={menuItem} key={index}/>
