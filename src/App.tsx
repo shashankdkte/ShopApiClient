@@ -1,6 +1,6 @@
 
 import { Header, Footer } from "./Components/Layout";
-import { Home, NotFound } from "./Pages";
+import { Home, NotFound ,MenuItemDetails} from "./Pages";
 
 
 import './App.css';
@@ -14,6 +14,7 @@ function App() {
       <div className="pb-5">
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/menuItemDetails/:menuItemId" element={<MenuItemDetails />}></Route>
           <Route path="*" element={<NotFound />}></Route>
       </Routes>
 
